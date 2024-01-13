@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { GoCheck } from "react-icons/go";
+import Check from "../../assets/check.svg"
 
 export const Container = styled.div`
     display: flex;
@@ -8,50 +8,38 @@ export const Container = styled.div`
 
     margin: 1rem 0 0 ;
 
+    label {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        
+        margin: 0;
+    }
 
-    > .Checkbox {
-        margin-right: 0.8rem;
+    input {
         display: none;
     }
 
-    > label {
-        font-size: 1.4rem;
-    }
-
-    .Checkbox, label{
+    .Checkbox + label {
         cursor: pointer;
     }
 
-    
-
-    .Checkbox + label::before {
-        content: "";
-        display: inline-block;
+    label::before{
+        content: '';
         width: 1.8rem;
         height: 1.8rem;
-        border-radius: 5px;
-        margin-right: 5px;
+        display: block;
+
         border: 2px solid ${({ theme }) => theme.COLORS.ORANGE};
-        margin-bottom: -2px;
-        
+        border-radius: 5px
+    }
+
+    .Checkbox:checked + label::before {
+        background: url(${Check}) no-repeat center center;
+       
     }
 
 
-
-    input[type="checkbox"]:checked + label::before {
-        mask: url(${GoCheck}) no-repeat center;
-        >svg {
-            font-size: 20px;
-            color: ${({ theme }) => theme.COLORS.ORANGE};
-        }
-    }
-
-    input[type="checkbox"]:checked + label::after {
-        content: "";
-        display: inline-block;
-        width: 1.8rem;
-        height: 1.8rem;
-        margin-bottom: -2px;
-  }
+   
 `;
  

@@ -32,6 +32,7 @@ export default createGlobalStyle`
     }
 
     a {
+        color: ${({ theme }) => theme.COLORS.PURPLE_200};
         text-decoration: none;
     }
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    width: clamp(20.7rem, 0rem + 6.432vw, 27.7rem);
+    width: 100%;
     height:4.6rem;
 
     padding: 0 1.6rem;

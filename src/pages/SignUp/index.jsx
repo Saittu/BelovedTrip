@@ -10,17 +10,17 @@ import { GoEyeClosed, GoEye } from "react-icons/go";
 import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
 import { ButtonText } from "../../components/buttontext";
 
-export function SignIn() {
+export function SignUp() {
     return (
         <Container>
             <Form>
                 <header>
 
-                    <ButtonText text="Entrar"/>
-
-                    <Link to="/register">
-                        Cadastrar
+                    <Link to="/">
+                        Entrar
                     </Link>
+
+                    <ButtonText text="cadastrar"/>
 
                 </header>
 
@@ -28,6 +28,12 @@ export function SignIn() {
 
                 <p>Bem vindo, Entre e conheça nossos planos</p>
 
+
+                <Input
+                    title="Name"
+                    type="text"
+                    autoComplete="name"
+                />
 
                 <Input
                     title="E-mail"
@@ -42,18 +48,9 @@ export function SignIn() {
                     icon={GoEyeClosed}
                 />
 
-                <div className="OptionsUser">
-                    <CheckBox
-                        text="Manter conectado ?"
-                    />
-
-                    <ButtonText
-                        text="Esqueceu a senha ?"
-                    />
-                </div>
 
                 <Button
-                    title="Entrar"
+                    title="Cadastrar"
                 />
                 <div className="endSignIn">
                     <ButtonText

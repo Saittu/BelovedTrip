@@ -15,8 +15,8 @@ export const Container = styled.div`
         border-left: 3px solid ${({ theme }) => theme.COLORS.ORANGE};
     }
        
-    p {
-        color: ${({ theme }) => theme.COLORS.PURPLE_300};
+    label {
+        color: ${({ theme }) => theme.COLORS.BACKGROUND};
         font-weight: 600;
         padding: 0 1.6rem;
         margin-top: 0.5rem;
@@ -54,7 +54,7 @@ export const Container = styled.div`
 
         svg {
             grid-area: svg;
-            color: ${({ theme }) => theme.COLORS.PURPLE_300};
+            color: ${({ theme }) => theme.COLORS.BACKGROUND};
             margin: 0 2rem;
         }
 `;

@@ -13,12 +13,9 @@ export const Container = styled.div`
         margin-top: 2.8rem;
 
         a {
+            margin-right: 2.8rem;
             font-weight: 600;
             font-size: 1.5rem;
-        }
-
-        a:first-child {
-            margin-right: 2.8rem;
         }
 
         a:hover {
@@ -31,12 +28,12 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-    padding: 0 8.3rem;
+    padding: 0 7.3rem;
     margin-right: clamp(2rem, 0rem + 6.245vw, 7rem);
     display: flex;
     flex-direction: column;
 
-    
+
 
     > h1 {
         font-weight: 600;
