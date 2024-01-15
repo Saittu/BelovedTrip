@@ -28,7 +28,8 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-    padding: 0 7.3rem;
+    width: 49.6rem;
+    padding: 0 6.3rem;
     margin-right: clamp(2rem, 0rem + 6.245vw, 7rem);
     display: flex;
     flex-direction: column;
@@ -52,6 +53,8 @@ export const Form = styled.form`
         
     }
 
+
+
     .OptionsUser {
         display: flex;
         align-items:end;
@@ -71,12 +74,12 @@ export const Form = styled.form`
 
         a:first-child {
             font-size: 1.6rem;
-            border-bottom: 1px solid ${({ theme }) => theme.COLORS.PURPLE_200};
+            border-bottom: 1px solid ${({ theme }) => theme.COLORS.PURPLE_100};
         }
 
         svg {
             font-size: 2.8rem;
-            color: ${({ theme }) => theme.COLORS.PURPLE_200};
+            color: ${({ theme }) => theme.COLORS.PURPLE_100};
         }
     }
 

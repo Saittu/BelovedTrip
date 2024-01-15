@@ -28,25 +28,26 @@ export function SignUp() {
 
                 <p>Bem vindo, Entre e conheça nossos planos</p>
 
+                <div className="InputConteiner">
+                    <Input
+                        title="Name"
+                        type="text"
+                        autoComplete="name"
+                    />
 
-                <Input
-                    title="Name"
-                    type="text"
-                    autoComplete="name"
-                />
+                    <Input
+                        title="E-mail"
+                        type="email"
+                        autoComplete="e-mail"
+                    />
 
-                <Input
-                    title="E-mail"
-                    type="email"
-                    autoComplete="e-mail"
-                />
-
-                <Input
-                    title="password"
-                    type="password"
-                    autoComplete="current-password"
-                    icon={GoEyeClosed}
-                />
+                    <Input
+                        title="password"
+                        type="password"
+                        autoComplete="current-password"
+                        icon={GoEyeClosed}
+                    />
+                </div>
 
 
                 <Button
