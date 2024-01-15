@@ -6,14 +6,14 @@ import theme from './styles/theme'
 import { ThemeProvider } from 'styled-components'
 
 import { Routes } from "./Routes"
-import { Locais } from "./pages/Locais"
+import { Contatos } from "./pages/Contatos"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-      <Locais/>
+      <Contatos/>
     </ThemeProvider>
   </React.StrictMode>,
 )

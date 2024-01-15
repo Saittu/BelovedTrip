@@ -4,6 +4,7 @@ export const HeaderLeft = styled.div`
     max-width: 8rem;
     height: 100vh;
     background: ${({ theme }) => theme.COLORS.PURPLE_200};
+    position: fixed;
 `;
 
 export const HeaderTop = styled.div`
@@ -15,6 +16,7 @@ export const HeaderTop = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     h1 {
         font-size: 3.8rem;
