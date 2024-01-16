@@ -38,5 +38,39 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.ORANGE};
     }
     
+    .ContainerContent {
+        display: flex;
+        justify-content: center;
+        
+
+        section:first-child{
+            border-right-color: ${({ theme }) => theme.COLORS.ORANGE};
+            border-right-width: 3px;
+            border-right-style: solid;
+            padding-right: 5rem;
+        }
+
+        
+
+    #SecondSection {
+        margin-left: 2rem;
+    }
+
+    .ValueContact {
+        display: flex;
+        align-items: center;
+
+        gap: 0.8rem;
+
+
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        svg {
+            font-size: 2rem;
+        }
+    }
 
 `;

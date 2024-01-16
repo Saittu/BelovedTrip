@@ -6,5 +6,5 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
 
-    margin: 5rem 0 0 20rem;
+    margin: 5rem 0 0 0rem;
 `;
